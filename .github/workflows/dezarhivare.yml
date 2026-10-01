@@ -1,0 +1,29 @@
+name: Dezarhivare
+
+on:
+  push:
+    paths:
+      - ".github/workflows/dezarhivare.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extrage proiectul
+        run: |
+          echo "765067c802e96bd8c324944082763050ce41f88bde21e59cc626be58e9e43db0  AutoDealerPro-iOS.zip" | sha256sum -c -
+          unzip -q AutoDealerPro-iOS.zip -d "$RUNNER_TEMP/proiect"
+          cp -a "$RUNNER_TEMP/proiect/AutoDealerPro-iOS/." .
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          if ! git diff --cached --quiet; then
+            git commit -m "Adauga fisierele AutoDealer Pro"
+            git push
+          fi
