@@ -1,0 +1,22 @@
+# Manual verification only. No Apple account or signing keys are required here.
+# Run this workflow first. A successful run creates a simulator app, not an iPhone IPA.
+workflows:
+  ios-verify:
+    name: AutoDealer Pro - Build and tests
+    instance_type: mac_mini_m2
+    max_build_duration: 45
+    environment:
+      xcode: latest
+    scripts:
+      - name: Validate project files
+        script: python3 scripts/validate-project.py
+      - name: Compile and run XCTest on an iPhone simulator
+        script: bash scripts/verify-on-mac.sh
+      - name: Package simulator build and test results
+        script: bash scripts/package-simulator.sh
+    artifacts:
+      - build/AutoDealerPro-Simulator.zip
+      - build/XCTest-Results.zip
+      - build/verification.log
+# Enable the signed TestFlight workflow only after configuring the Apple identity.
+# See CLOUD_SETUP_RO.md and scripts/configure-testflight.py.

@@ -1,0 +1,41 @@
+
+  ios-testflight:
+    name: AutoDealer Pro - Internal TestFlight
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    integrations:
+      app_store_connect: __INTEGRATION__
+    environment:
+      xcode: latest
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: __BUNDLE_ID__
+      vars:
+        BUNDLE_ID: __BUNDLE_ID__
+        BUILD_NUMBER_OFFSET: "0"
+    scripts:
+      - name: Validate project files
+        script: python3 scripts/validate-project.py
+      - name: Compile and test before signing
+        script: bash scripts/verify-on-mac.sh
+      - name: Set unique build number
+        script: python3 scripts/set-build-number.py
+      - name: Apply internal TestFlight signing profiles
+        script: |
+          set -euo pipefail
+          xcode-project use-profiles --custom-export-options='{"testFlightInternalTestingOnly":true}'
+      - name: Create signed iPhone build
+        script: |
+          set -euo pipefail
+          xcode-project build-ipa --project AutoDealerPro.xcodeproj --scheme AutoDealerPro
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - build/verification.log
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: false
+        submit_to_app_store: false
+# Upload only. After Apple processes the build, assign it to an INTERNAL tester
+# in App Store Connect. No external beta review or public App Store submission.

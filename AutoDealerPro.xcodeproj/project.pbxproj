@@ -1,0 +1,54 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		8D69DD4E49BA4D826FFB6C78 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AutoDealerProApp.swift"; sourceTree = "<group>"; };
+		85B10C9F59290D70439F160E = { isa = PBXBuildFile; fileRef = 8D69DD4E49BA4D826FFB6C78; };
+		D09AE6A1015824D85B184130 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomerSettingsViews.swift"; sourceTree = "<group>"; };
+		554D060B8529687B981E669C = { isa = PBXBuildFile; fileRef = D09AE6A1015824D85B184130; };
+		65E113B57FE3790F68B92794 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DealerStore.swift"; sourceTree = "<group>"; };
+		BD15D6FF92CE079F427C459F = { isa = PBXBuildFile; fileRef = 65E113B57FE3790F68B92794; };
+		8048403DFCAB4E2E7D6E716F = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Documents.swift"; sourceTree = "<group>"; };
+		D05EB2D54100409DD37A6FFD = { isa = PBXBuildFile; fileRef = 8048403DFCAB4E2E7D6E716F; };
+		7A321ABB1364555ED66CF3CC = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InventoryViews.swift"; sourceTree = "<group>"; };
+		C4D283F5781FB7CA10A25F8C = { isa = PBXBuildFile; fileRef = 7A321ABB1364555ED66CF3CC; };
+		A49BB31934AF980AAE32176E = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models.swift"; sourceTree = "<group>"; };
+		9EF84C6C2AA2ADC611D8738B = { isa = PBXBuildFile; fileRef = A49BB31934AF980AAE32176E; };
+		8BDBE331C1ECC0988F291A45 = { isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		A5FFCA7750C168C09A773013 = { isa = PBXBuildFile; fileRef = 8BDBE331C1ECC0988F291A45; };
+		680DDEF6E27B67B116EB0624 = { isa = PBXFileReference; lastKnownFileType = text.xml; path = "PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		ED01C2C143EFD4D04B496B81 = { isa = PBXBuildFile; fileRef = 680DDEF6E27B67B116EB0624; };
+		E00B2EC4CD4F11B9E0A1B974 = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+		1C3A5F51B34AB1F1F2061814 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealerTests.swift; sourceTree = "<group>"; };
+		AF283C19CC8548A747082FF1 = { isa = PBXBuildFile; fileRef = 1C3A5F51B34AB1F1F2061814; };
+		38A007151ABE87CC01A5B6E9 = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoDealerPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7480EC88B7F22D0A4757273 = { isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoDealerProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28B7AF69320201D1CF206EB = { isa = PBXGroup; children = (3A2A88DEEFF3D1D23E496597,8B7A6DECC0651D269EA794C7,FBDC4F23F93125BBEEAE800C,); sourceTree = "<group>"; };
+		3A2A88DEEFF3D1D23E496597 = { isa = PBXGroup; children = (8D69DD4E49BA4D826FFB6C78,D09AE6A1015824D85B184130,65E113B57FE3790F68B92794,8048403DFCAB4E2E7D6E716F,7A321ABB1364555ED66CF3CC,A49BB31934AF980AAE32176E,8BDBE331C1ECC0988F291A45,680DDEF6E27B67B116EB0624,E00B2EC4CD4F11B9E0A1B974,); path = AutoDealerPro; sourceTree = "<group>"; };
+		8B7A6DECC0651D269EA794C7 = { isa = PBXGroup; children = (1C3A5F51B34AB1F1F2061814,); path = AutoDealerProTests; sourceTree = "<group>"; };
+		FBDC4F23F93125BBEEAE800C = { isa = PBXGroup; children = (38A007151ABE87CC01A5B6E9,B7480EC88B7F22D0A4757273,); name = Products; sourceTree = "<group>"; };
+		BCE16DD0260827ECF338C787 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (85B10C9F59290D70439F160E,554D060B8529687B981E669C,BD15D6FF92CE079F427C459F,D05EB2D54100409DD37A6FFD,C4D283F5781FB7CA10A25F8C,9EF84C6C2AA2ADC611D8738B,); runOnlyForDeploymentPostprocessing = 0; };
+		0189424A5A60FED329FA868E = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A5FFCA7750C168C09A773013,ED01C2C143EFD4D04B496B81,); runOnlyForDeploymentPostprocessing = 0; };
+		7561BFB015D8F536760CB671 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		9F3002A5D69B22D357A58AA9 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (AF283C19CC8548A747082FF1,); runOnlyForDeploymentPostprocessing = 0; };
+		C584AE92222380FB29B6223F = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		99C7943D90D870A50ADE9160 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		D799BAE6088A90139B415FCC = { isa = PBXContainerItemProxy; containerPortal = 98F54143AB4E86B28C3AFEE0; proxyType = 1; remoteGlobalIDString = 0E8A3AD980EC179856012B7E; remoteInfo = AutoDealerPro; };
+		DE58E2B17C19600779694943 = { isa = PBXTargetDependency; target = 0E8A3AD980EC179856012B7E; targetProxy = D799BAE6088A90139B415FCC; };
+		0E8A3AD980EC179856012B7E = { isa = PBXNativeTarget; buildConfigurationList = C57128001CE614BF8549D6BB; buildPhases = (BCE16DD0260827ECF338C787,7561BFB015D8F536760CB671,0189424A5A60FED329FA868E,); buildRules = (); dependencies = (); name = AutoDealerPro; productName = AutoDealerPro; productReference = 38A007151ABE87CC01A5B6E9; productType = "com.apple.product-type.application"; };
+		0A06C5E2DA34E686D888A695 = { isa = PBXNativeTarget; buildConfigurationList = BECB265224D91761C05FDA33; buildPhases = (9F3002A5D69B22D357A58AA9,99C7943D90D870A50ADE9160,C584AE92222380FB29B6223F,); buildRules = (); dependencies = (DE58E2B17C19600779694943,); name = AutoDealerProTests; productName = AutoDealerProTests; productReference = B7480EC88B7F22D0A4757273; productType = "com.apple.product-type.bundle.unit-test"; };
+		98F54143AB4E86B28C3AFEE0 = { isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = YES; LastSwiftUpdateCheck = 2600; LastUpgradeCheck = 2600; TargetAttributes = { 0E8A3AD980EC179856012B7E = { CreatedOnToolsVersion = 26.0; }; 0A06C5E2DA34E686D888A695 = { CreatedOnToolsVersion = 26.0; TestTargetID = 0E8A3AD980EC179856012B7E; }; }; }; buildConfigurationList = 862894B703A6DEDF96A9DD6C; compatibilityVersion = "Xcode 14.0"; developmentRegion = de; hasScannedForEncodings = 0; knownRegions = (de,en,Base,); mainGroup = B28B7AF69320201D1CF206EB; productRefGroup = FBDC4F23F93125BBEEAE800C; projectDirPath = ""; projectRoot = ""; targets = (0E8A3AD980EC179856012B7E,0A06C5E2DA34E686D888A695,); };
+		89E1FD6268CC0F221A2BE178 = { isa = XCBuildConfiguration; buildSettings = { SWIFT_VERSION = "5.0"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; SDKROOT = "iphoneos"; CLANG_ENABLE_MODULES = "YES"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; ENABLE_TESTABILITY = "YES"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; }; name = Debug; };
+		E6DE6C99132752C914FEF632 = { isa = XCBuildConfiguration; buildSettings = { SWIFT_VERSION = "5.0"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; SDKROOT = "iphoneos"; CLANG_ENABLE_MODULES = "YES"; SWIFT_OPTIMIZATION_LEVEL = "-O"; ENABLE_TESTABILITY = "NO"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)"; }; name = Release; };
+		862894B703A6DEDF96A9DD6C = { isa = XCConfigurationList; buildConfigurations = (89E1FD6268CC0F221A2BE178,E6DE6C99132752C914FEF632,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		7082CC0B6FC1282FCEABD07A = { isa = XCBuildConfiguration; buildSettings = { SWIFT_VERSION = "5.0"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; SDKROOT = "iphoneos"; CLANG_ENABLE_MODULES = "YES"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon"; CODE_SIGN_STYLE = "Automatic"; CURRENT_PROJECT_VERSION = "1"; GENERATE_INFOPLIST_FILE = "NO"; INFOPLIST_FILE = "AutoDealerPro/Info.plist"; MARKETING_VERSION = "0.1.0"; PRODUCT_BUNDLE_IDENTIFIER = "com.example.autodealerpro"; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = "NO"; TARGETED_DEVICE_FAMILY = "1,2"; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; SWIFT_EMIT_LOC_STRINGS = "YES"; }; name = Debug; };
+		639A7CA24D39909E713B47F7 = { isa = XCBuildConfiguration; buildSettings = { SWIFT_VERSION = "5.0"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; SDKROOT = "iphoneos"; CLANG_ENABLE_MODULES = "YES"; SWIFT_OPTIMIZATION_LEVEL = "-O"; ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon"; CODE_SIGN_STYLE = "Automatic"; CURRENT_PROJECT_VERSION = "1"; GENERATE_INFOPLIST_FILE = "NO"; INFOPLIST_FILE = "AutoDealerPro/Info.plist"; MARKETING_VERSION = "0.1.0"; PRODUCT_BUNDLE_IDENTIFIER = "com.example.autodealerpro"; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = "NO"; TARGETED_DEVICE_FAMILY = "1,2"; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; SWIFT_EMIT_LOC_STRINGS = "YES"; }; name = Release; };
+		C57128001CE614BF8549D6BB = { isa = XCConfigurationList; buildConfigurations = (7082CC0B6FC1282FCEABD07A,639A7CA24D39909E713B47F7,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		FCB48D8F88BCDB0ED9FADFD7 = { isa = XCBuildConfiguration; buildSettings = { SWIFT_VERSION = "5.0"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; SDKROOT = "iphoneos"; CLANG_ENABLE_MODULES = "YES"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; GENERATE_INFOPLIST_FILE = "YES"; PRODUCT_BUNDLE_IDENTIFIER = "com.example.autodealerpro.tests"; PRODUCT_NAME = "$(TARGET_NAME)"; TARGETED_DEVICE_FAMILY = "1,2"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoDealerPro.app/AutoDealerPro"; BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = "Automatic"; }; name = Debug; };
+		942EEBBACD6C88CAE7F29B29 = { isa = XCBuildConfiguration; buildSettings = { SWIFT_VERSION = "5.0"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; SDKROOT = "iphoneos"; CLANG_ENABLE_MODULES = "YES"; SWIFT_OPTIMIZATION_LEVEL = "-O"; GENERATE_INFOPLIST_FILE = "YES"; PRODUCT_BUNDLE_IDENTIFIER = "com.example.autodealerpro.tests"; PRODUCT_NAME = "$(TARGET_NAME)"; TARGETED_DEVICE_FAMILY = "1,2"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoDealerPro.app/AutoDealerPro"; BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = "Automatic"; }; name = Release; };
+		BECB265224D91761C05FDA33 = { isa = XCConfigurationList; buildConfigurations = (FCB48D8F88BCDB0ED9FADFD7,942EEBBACD6C88CAE7F29B29,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0;
+}
