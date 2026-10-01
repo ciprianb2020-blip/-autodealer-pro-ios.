@@ -1,0 +1,27 @@
+name: Verificare iOS
+
+on:
+  push:
+    paths:
+      - ".github/workflows/verificare-ios.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compileaza si testeaza
+        run: bash scripts/verify-on-mac.sh
+
+      - name: Pastreaza jurnalul
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jurnal-verificare
+          path: build/verification.log
